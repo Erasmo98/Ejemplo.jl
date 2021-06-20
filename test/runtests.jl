@@ -1,7 +1,5 @@
-using Ejemplo
-using Test
+using SafeTestsets
 
-@testset "Ejemplo.jl" begin
-    @test f(2, 1) == 7
-    @test f(2, 3) == 13
+@safetestset "Purebas de f." begin
+    include("test_f.jl")
 end

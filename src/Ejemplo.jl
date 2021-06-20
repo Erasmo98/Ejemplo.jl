@@ -1,7 +1,10 @@
 module Ejemplo
 
+using Base: Forward
+using ForwardDiff
+
 include("extra_file.jl")
 
-export f
+export f, ∂ₓf
 
 end
